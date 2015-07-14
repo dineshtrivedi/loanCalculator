@@ -6,7 +6,18 @@
     <script type="text/javascript" src="build/bower.js"></script>
     <script type="text/javascript" src="src/app.js"></script>
 </head>
-<body ng-app="loanCalculator">
-    {{1 + 1}}
+<body ng-app="loanCalculator" ng-controller="LoanCtrl">
+    <div>
+        Amount: <input type="number" ng-model="m.totalAmount">
+    </div>
+    <div>
+        Rate(%): <input type="number" ng-model="m.rate">
+    </div>
+    <div>
+        TR(%): <input type="number" ng-model="m.TR">
+    </div>    
+    <div>
+        Number Payment: <input type="number" ng-model="m.numberPayment">
+    </div>
 </body>
 </html>
