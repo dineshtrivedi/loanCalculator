@@ -5,19 +5,28 @@
     <title>Loan Calculator</title>
     <script type="text/javascript" src="build/bower.js"></script>
     <script type="text/javascript" src="src/app.js"></script>
+    <link rel="stylesheet" href="build/bower.css">
 </head>
 <body ng-app="loanCalculator" ng-controller="LoanCtrl">
-    <div>
-        Amount: <input type="number" ng-model="m.totalAmount">
-    </div>
-    <div>
-        Rate(%): <input type="number" ng-model="m.rate">
-    </div>
-    <div>
-        TR(%): <input type="number" ng-model="m.TR">
-    </div>    
-    <div>
-        Number Payment: <input type="number" ng-model="m.numberPayment">
+    <div layout="column" class="inputdemoBasicUsage">
+        <md-content md-theme="docs-dark" layout-padding="" layout="row" layout-sm="column">
+            <md-input-container>
+                <label>Amount:</label>
+                <input ng-model="m.totalAmount">
+            </md-input-container>
+            <md-input-container>
+                <label>Rate(%):</label>
+                <input type="number" ng-model="m.rate">
+            </md-input-container>
+            <md-input-container>
+                <label>TR(%):</label>
+                <input type="number" ng-model="m.TR">
+            </md-input-container>    
+            <md-input-container>
+                <label>Number Payment:</label>
+                <input type="number" ng-model="m.numberPayment">
+            </md-input-container>
+        </md-content>
     </div>
 </body>
 </html>
