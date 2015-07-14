@@ -12,21 +12,30 @@
         <md-content md-theme="docs-dark" layout-padding="" layout="row" layout-sm="column">
             <md-input-container>
                 <label>Amount:</label>
-                <input ng-model="m.totalAmount">
+                <input type="number" step="1000" ng-model="m.totalAmount">
             </md-input-container>
             <md-input-container>
-                <label>Rate(%):</label>
-                <input type="number" ng-model="m.rate">
+                <label>Rate(% - by year):</label>
+                <input type="number" step="0.1" ng-model="m.rate">
             </md-input-container>
             <md-input-container>
                 <label>TR(%):</label>
-                <input type="number" ng-model="m.TR">
+                <input type="number" step="0.001" ng-model="m.TR">
             </md-input-container>    
             <md-input-container>
                 <label>Number Payment:</label>
                 <input type="number" ng-model="m.numberPayment">
             </md-input-container>
         </md-content>
+        <span>
+            <md-button ng-click="m.calculateSimplePayment()" class="md-mini md-raised"> Calculate </md-button>
+        </span>
+        <md-content layout-padding="" >
+            <md-input-container>
+                <label>Simple Payment(Disabled):</label>
+                <input step="0.01" type="number" ng-model="m.simplePayment" disabled="">
+            </md-input-container>
+        </md-content>        
     </div>
 </body>
 </html>
