@@ -1,0 +1,26 @@
+{
+  "name": "loanCalculator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dineshTrivedi/loanCalculator.git"
+  },
+  "keywords": [
+    "loan"
+  ],
+  "author": "Dinesh Trivedi",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/dineshTrivedi/loanCalculator/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.11.2",
+    "jshint-stylish": "~2.0.1"
+  }
+}
